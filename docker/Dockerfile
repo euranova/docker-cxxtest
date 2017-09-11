@@ -24,6 +24,7 @@ RUN apk add --no-cache \
   python3=3.6.1-r2 \
   g++=6.3.0-r4 \
   make=4.2.1-r0 \
+  bash=4.3.48-r1 \
   && ln -s /usr/bin/python3 /usr/bin/python \
   && pip3 --no-cache-dir install ply==3.10
 
@@ -32,4 +33,4 @@ ENV PATH="/cxxtest/bin:${PATH}" CXXTEST="/cxxtest"
 
 WORKDIR /app
 
-RUN /bin/sh
+ENTRYPOINT /bin/bash
