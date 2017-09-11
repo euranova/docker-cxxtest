@@ -11,7 +11,7 @@ The image can be built using the provided [build.sh](build.sh) script.
 Run BusyBox in the docker image with the following command:
 
 ```sh
-docker run --user ${UID} -it -v ${PWD}:/app -w /app euranova/cxxtest:4.4
+docker run --user ${UID} -it -v ${PWD}:/app euranova/cxxtest:4.4
 ```
 
 Then, use `cxxtestgen` and `gcc`/`g++` to build tests.
