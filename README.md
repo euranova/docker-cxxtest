@@ -7,7 +7,7 @@ Docker image to test C++ code using [CxxTest](http://cxxtest.com)
 The image can be built using the following command from the project root:
 
 ```sh
-docker build -t euranova/cxxtest docker
+docker build -t euranova/cxxtest .
 ```
 
 ## Usage
